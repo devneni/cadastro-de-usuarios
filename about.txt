@@ -1,0 +1,72 @@
+Atividade
+
+Você foi contratado para desenvolver um formulário de cadastro de
+usuários para um sistema web.
+
+O formulário deve coletar informações básicas e preferências do usuário.
+
+Crie um formulário contendo os seguintes campos:
+
+Dados pessoais
+
+Nome completo (texto)
+
+Email (validação de email)
+
+Senha (campo oculto)
+
+Data de nascimento (data)
+
+Atividade
+
+Informações adicionais
+
+Gênero (radio: Masculino, Feminino, Outro)
+
+Interesses (checkbox: Tecnologia, Esportes, Música, Jogos)
+
+País (select com pelo menos 3 opções)
+
+Outros campos
+
+Foto de perfil (upload de arquivo)
+
+Cor favorita (color)
+
+Nível de satisfação (range de 0 a 10)
+
+Mensagem
+
+Campo de texto longo (textarea)
+
+Atividade
+
+Ações
+
+Botão de envio
+
+Botão de limpar formulário
+
+Requisitos obrigatórios
+
+Usar <form> com method="POST“
+
+Todos os campos devem ter <label>
+
+Usar name em todos os inputs
+
+Agrupar com <fieldset> e <legend>
+
+Pelo menos 1 campo com required
+
+Desafio
+
+Implemente:
+
+Validação:
+
+Email obrigatório
+
+Senha com mínimo de 6 caracteres
+
+Exibir mensagem ao enviar (pode usar JS simples)

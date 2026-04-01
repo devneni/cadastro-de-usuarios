@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de c</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Usuário</title>
+
+
 </head>
+
 <body>
-  
+
+<form id="formCadastro" method="POST">
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="6" required>
+
+        <label for="dataNascimento">Data de nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento">
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações Adicionais</legend>
+
+        <label>Gênero:</label>
+        <input class="inline" type="radio" name="genero" value="Masculino" required> Masculino
+        <input class="inline" type="radio" name="genero" value="Feminino"> Feminino
+        <input class="inline" type="radio" name="genero" value="Outro"> Outro
+
+        <label>Interesses:</label>
+        <input class="inline" type="checkbox" name="interesses" value="Tecnologia"> Tecnologia
+        <input class="inline" type="checkbox" name="interesses" value="Esportes"> Esportes
+        <input class="inline" type="checkbox" name="interesses" value="Música"> Música
+        <input class="inline" type="checkbox" name="interesses" value="Jogos"> Jogos
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Selecione</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Outros Campos</legend>
+
+        <label for="foto">Foto de perfil:</label>
+        <input type="file" id="foto" name="foto">
+
+        <label for="cor">Cor favorita:</label>
+        <input type="color" id="cor" name="cor">
+
+        <label for="satisfacao">Nível de satisfação (0 a 10):</label>
+        <input type="range" id="satisfacao" name="satisfacao" min="0" max="10">
+    </fieldset>
+
+    
+    <fieldset>
+        <legend>Mensagem</legend>
+
+        <label for="mensagem">Escreva sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+    </fieldset>
+
+    
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+</form>
+
+<script src="script.js"></script>
 </body>
 </html>
